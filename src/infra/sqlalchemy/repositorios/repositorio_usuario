@@ -26,7 +26,3 @@ class RepositorioUsuario():
         query = select(models.Usuario).where(models.Usuario.telefone==telefone)
         return self.session.execute(query).scalars().first()
 
-    def remover():
-        pass
-
-
